@@ -9,3 +9,4 @@ console.log(Name);
 let Or: String | Number|boolean = "Fadwa";
 Or = true;
 Or = 30;
+let allArray: (string|number)[] = ["fadwa", 34];
