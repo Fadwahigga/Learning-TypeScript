@@ -6,12 +6,34 @@ let All; //any
 All = "fadwa";
 console.log(Name);
 
-let Or: String | Number|boolean = "Fadwa";
+let Or: String | Number | boolean = "Fadwa";
 Or = true;
 Or = 30;
 let allArray: (string | number)[] = ["fadwa", 34];
-let mAraay : (number | boolean | string[] | number[])[]= [1, 2, 3, ["fadwa", "ali"], true, false, [1, 2, 3]];
+let mAraay: (number | boolean | string[] | number[])[] = [
+  1,
+  2,
+  3,
+  ["fadwa", "ali"],
+  true,
+  false,
+  [1, 2, 3],
+];
 /**Type Alias */
 type stringnumber = string | number;
 let test: stringnumber = 10;
 test = "fadwa";
+/** Type Alias Advanced */
+type Buttons = {
+  u: string;
+  l: string;
+  r: string;
+  d: string;
+};
+function getArr(btn: Buttons) {
+  console.log(`UP ${btn.u}`);
+  console.log(`LEFT ${btn.l}`);
+  console.log(`RIGHT ${btn.r}`);
+  console.log(`DOW ${btn.d}`);
+};
+getArr({u:"stt",l:"lee",r:"ree",d:"ssss"});
