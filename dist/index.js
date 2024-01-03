@@ -1,29 +1,22 @@
 "use strict";
-console.log("test");
-let Name = "Fadwa";
-let Age = 20;
-Age = "fadwa";
-let All; //any
-All = "fadwa";
-console.log(Name);
-let Or = "Fadwa";
-Or = true;
-Or = 30;
-let allArray = ["fadwa", 34];
-let mAraay = [
-    1,
-    2,
-    3,
-    ["fadwa", "ali"],
-    true,
-    false,
-    [1, 2, 3],
-];
-function getArr(btn) {
-    console.log(`UP ${btn.u}`);
-    console.log(`LEFT ${btn.l}`);
-    console.log(`RIGHT ${btn.r}`);
-    console.log(`DOW ${btn.d}`);
+// console.log("test");
+// let Name: String = "Fadwa";
+// let Age: any = 20;
+// Age = "fadwa";
+// let All; //any
+// All = "fadwa";
+// console.log(Name);
+function compare(num1, num2) {
+    if (num1 === num2) {
+        return 1;
+    }
+    else if (num1 > num2) {
+        return -1;
+    }
+    else {
+        return 0;
+    }
 }
-getArr({ u: "stt", l: "lee", r: "ree", d: "ssss", x: false });
+;
+console.log(compare(2, 4));
 //# sourceMappingURL=index.js.map
