@@ -11,3 +11,7 @@ Or = true;
 Or = 30;
 let allArray: (string | number)[] = ["fadwa", 34];
 let mAraay : (number | boolean | string[] | number[])[]= [1, 2, 3, ["fadwa", "ali"], true, false, [1, 2, 3]];
+/**Type Alias */
+type stringnumber = string | number;
+let test: stringnumber = 10;
+test = "fadwa";
