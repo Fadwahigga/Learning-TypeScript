@@ -51,10 +51,16 @@
 // console.log(compare(2,4));
 
 /**Interface */
-interface User{
-    id: number,
-    userName: string,
-    country:string
-};
+interface User {
+  id: number;
+  userName: string;
+  country: string;
+}
 let user: User = { id: 100, userName: "fadwa", country: "sudan" };
 console.log(user);
+const getUser = (data: User) => {
+  console.log(`ID is ${data.id}`);
+  console.log(`UserName is ${data.userName}`);
+  console.log(`Country is ${data.country}`);
+};
+getUser({ id: 100, userName: "fadwa", country: "sudan" });
