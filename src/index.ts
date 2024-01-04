@@ -38,14 +38,23 @@
 //   console.log(`DOW ${btn.d}`);
 // }
 // getArr({ u: "stt", l: "lee", r: "ree", d: "ssss", x: false });
-type nums = 0 | 1 | -1;
-function compare(num1: number, num2: number): nums {
-  if (num1 === num2) {
-    return 1;
-  } else if (num1 > num2) {
-    return -1;
-  } else {
-    return 0;
-  }
+// type nums = 0 | 1 | -1;
+// function compare(num1: number, num2: number): nums {
+//   if (num1 === num2) {
+//     return 1;
+//   } else if (num1 > num2) {
+//     return -1;
+//   } else {
+//     return 0;
+//   }
+// };
+// console.log(compare(2,4));
+
+/**Interface */
+interface User{
+    id: number,
+    userName: string,
+    country:string
 };
-console.log(compare(2,4));
+let user: User = { id: 100, userName: "fadwa", country: "sudan" };
+console.log(user);
